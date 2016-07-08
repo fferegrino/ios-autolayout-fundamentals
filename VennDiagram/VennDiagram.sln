@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VennDiagram", "VennDiagram\VennDiagram.csproj", "{F65B6C18-9B40-4ABC-ACFE-391A4AF5E1EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F65B6C18-9B40-4ABC-ACFE-391A4AF5E1EF}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F65B6C18-9B40-4ABC-ACFE-391A4AF5E1EF}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F65B6C18-9B40-4ABC-ACFE-391A4AF5E1EF}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F65B6C18-9B40-4ABC-ACFE-391A4AF5E1EF}.Release|iPhone.Build.0 = Release|iPhone
+		{F65B6C18-9B40-4ABC-ACFE-391A4AF5E1EF}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F65B6C18-9B40-4ABC-ACFE-391A4AF5E1EF}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{F65B6C18-9B40-4ABC-ACFE-391A4AF5E1EF}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F65B6C18-9B40-4ABC-ACFE-391A4AF5E1EF}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
