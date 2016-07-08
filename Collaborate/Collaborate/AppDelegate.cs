@@ -25,6 +25,11 @@ namespace Collaborate
 			navigationController.TopViewController.NavigationItem.LeftBarButtonItem = splitViewController.DisplayModeButtonItem;
 			splitViewController.WeakDelegate = this;
 
+			#if DEBUG
+			NSUserDefaults.StandardUserDefaults.SetBool(true, "UIViewShowAlignmentRects");
+			NSUserDefaults.StandardUserDefaults.Synchronize();
+			#endif
+
 			return true;
 		}
 
