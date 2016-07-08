@@ -1,6 +1,7 @@
 ﻿using System;
 using UIKit;
 using System.ComponentModel;
+using Foundation;
 
 namespace VennDiagram
 {
@@ -14,12 +15,18 @@ namespace VennDiagram
 	[Foundation.Register("VennDiagram"), DesignTimeVisible(true)]
 	public class VennDiagram : UIView
 	{
+		[Outlet("leftCircleTopConstraint")]
 		public NSLayoutConstraint LeftCircleTopConstraint { get; set; }
+		[Outlet("leftCircleLeadingConstraint")]
 		public NSLayoutConstraint LeftCircleLeadingConstraint { get; set; }
+		[Outlet("leftCircleBottomConstraint")]
 		public NSLayoutConstraint LeftCircleBottomConstraint { get; set; }
 
+		[Outlet("rightCircleTopConstraint")]
 		public NSLayoutConstraint RightCircleTopConstraint { get; set; }
+		[Outlet("rightCircleTrailingConstraint")]
 		public NSLayoutConstraint RightCircleTrailingConstraint { get; set; }
+		[Outlet("rightCircleBottomConstraint")]
 		public NSLayoutConstraint RightCircleBottomConstraint { get; set; }
 
 

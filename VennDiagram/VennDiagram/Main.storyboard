@@ -55,6 +55,14 @@
                                     <constraint firstAttribute="bottom" secondItem="24" secondAttribute="bottom" constant="20" id="45"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="46"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="leftCircleBottomConstraint" destination="39" id="8Ju-Jn-ai1"/>
+                                    <outlet property="leftCircleLeadingConstraint" destination="38" id="Rlp-bw-Pk1"/>
+                                    <outlet property="leftCircleTopConstraint" destination="40" id="RgS-cm-P8d"/>
+                                    <outlet property="rightCircleBottomConstraint" destination="45" id="RuZ-Ay-EH5"/>
+                                    <outlet property="rightCircleTopConstraint" destination="43" id="TPJ-5Z-oK8"/>
+                                    <outlet property="rightCircleTrailingConstraint" destination="44" id="xII-pG-PCT"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54">
                                 <rect key="frame" x="0.0" y="564" width="200" height="44"/>
