@@ -57,11 +57,11 @@ namespace VennDiagram
 
 		public override void UpdateConstraints()
 		{
-			if (LeftCircleBottomConstraint == null)
-			{
-				base.UpdateConstraints();
-				return;
-			}
+			//if (LeftCircleBottomConstraint == null)
+			//{
+			//	base.UpdateConstraints();
+			//	return;
+			//}
 			switch (Weight)
 			{
 				case VennWeight.Left:
