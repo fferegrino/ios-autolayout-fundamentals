@@ -64,18 +64,27 @@
                                 <state key="normal" title="Left">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="leftTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MfT-R7-Wzd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55">
                                 <rect key="frame" x="200" y="564" width="200" height="44"/>
                                 <state key="normal" title="Balanced">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="balancedTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evB-ib-o3f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56">
                                 <rect key="frame" x="400" y="564" width="200" height="44"/>
                                 <state key="normal" title="Right">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="rightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5PX-Et-rR4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -101,6 +110,9 @@
                             <constraint firstItem="56" firstAttribute="leading" secondItem="55" secondAttribute="trailing" id="xhv-fu-F5p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="vennDiagram" destination="3" id="1fb-xn-V31"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

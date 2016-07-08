@@ -35,7 +35,7 @@ namespace VennDiagram
 
 		public CircleView(IntPtr p) : base(p)
 		{
-			Initialize();
+			//Initialize();
 		}
 
 		public void Initialize()
