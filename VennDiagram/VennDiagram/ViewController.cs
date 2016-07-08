@@ -17,7 +17,14 @@ namespace VennDiagram
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
+			VennDiagram.Weight = VennWeight.Left;
 			// Perform any additional setup after loading the view, typically from a nib.
+		}
+
+		public override void ViewWillLayoutSubviews()
+		{
+			base.ViewWillLayoutSubviews();
+			System.Diagnostics.Debug.WriteLine("Will layout subviews");
 		}
 
 		public override void DidReceiveMemoryWarning()
