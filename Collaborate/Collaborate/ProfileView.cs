@@ -79,25 +79,10 @@ namespace Collaborate
 
 			AddSubview(_profileImageView);
 
-			_profileTopConstraint = NSLayoutConstraint.Create(
-				view1: _profileImageView,
-				attribute1: NSLayoutAttribute.Top,
-				relation: NSLayoutRelation.Equal,
-				view2: this,
-				attribute2: NSLayoutAttribute.Top,
-				multiplier: 1,
-				constant: 0);
-			
-			var profileLeading = NSLayoutConstraint.Create(
-				view1: _profileImageView,
-				attribute1: NSLayoutAttribute.Leading,
-				relation: NSLayoutRelation.Equal,
-				view2: this,
-				attribute2: NSLayoutAttribute.Leading,
-				multiplier: 1,
-				constant: 0);
+			_profileTopConstraint = _profileImageView.TopAnchor.ConstraintEqualTo(this.TopAnchor);
+			_profileTopConstraint.Active = true;
 
-			AddConstraints(new NSLayoutConstraint[] { _profileTopConstraint, profileLeading });
+			_profileImageView.LeadingAnchor.ConstraintEqualTo(this.LeadingAnchor).Active = true;
 
 			_networkImageView = new UIImageView(CGRect.Empty);
 			_networkImageView.ContentMode = UIViewContentMode.ScaleAspectFit;
@@ -106,52 +91,18 @@ namespace Collaborate
 
 			AddSubview(_networkImageView);
 
-			var networkTop = NSLayoutConstraint.Create(
-				view1: _networkImageView,
-				attribute1: NSLayoutAttribute.Top,
-				relation: NSLayoutRelation.Equal,
-				view2: this,
-				attribute2: NSLayoutAttribute.Top,
-				multiplier: 1,
-				constant: 0);
 
-			_networkTrailingConstraint = NSLayoutConstraint.Create(
-				view1: _networkImageView,
-				attribute1: NSLayoutAttribute.Trailing,
-				relation: NSLayoutRelation.Equal,
-				view2: _profileImageView,
-				attribute2: NSLayoutAttribute.Trailing,
-				multiplier: 1,
-				constant: 0);
+			_networkImageView.TopAnchor.ConstraintEqualTo(this.TopAnchor).Active = true;
 
-			_networkBottomConstraint = NSLayoutConstraint.Create(
-				view1: _networkImageView,
-				attribute1: NSLayoutAttribute.Bottom,
-				relation: NSLayoutRelation.Equal,
-				view2: this,
-				attribute2: NSLayoutAttribute.Top,
-				multiplier: 1,
-				constant: 0);
+			_networkTrailingConstraint = _networkImageView.TrailingAnchor.ConstraintEqualTo(_profileImageView.TrailingAnchor);
+			_networkTrailingConstraint.Active = true;
 
-			_networkLeadingConstraint = NSLayoutConstraint.Create(
-				view1: _networkImageView,
-				attribute1: NSLayoutAttribute.Leading,
-				relation: NSLayoutRelation.Equal,
-				view2: this,
-				attribute2: NSLayoutAttribute.Leading,
-				multiplier: 1,
-				constant: 0);
+			_networkBottomConstraint = _networkImageView.BottomAnchor.ConstraintEqualTo(this.TopAnchor);
+			_networkBottomConstraint.Active = true;
 
-			//var ratio = NSLayoutConstraint.Create(
-			//	view1: _networkImageView,
-			//	attribute1: NSLayoutAttribute.Width,
-			//	relation: NSLayoutRelation.Equal,
-			//	view2: _networkImageView,
-			//	attribute2: NSLayoutAttribute.Height,
-			//	multiplier: _networkImageView.Frame.Size.Height / _networkImageView.Frame.Size.Width,
-			//	constant: 0);
+			_networkLeadingConstraint = _networkImageView.LeadingAnchor.ConstraintEqualTo(this.LeadingAnchor);
+			_networkLeadingConstraint.Active = true;
 
-			AddConstraints(new NSLayoutConstraint[] { networkTop, _networkBottomConstraint, _networkLeadingConstraint,_networkTrailingConstraint });
 
 		}
 
