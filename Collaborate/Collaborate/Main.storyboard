@@ -54,74 +54,71 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7i8-LO-sZn">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PartnerInCrime" translatesAutoresizingMaskIntoConstraints="NO" id="wE6-rc-b2p">
-                                        <rect key="frame" x="211" y="37" width="178" height="178"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpu-aS-4dU" userLabel="Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="598"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kip-YY-DNa">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="598"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PartnerInCrime" translatesAutoresizingMaskIntoConstraints="NO" id="wE6-rc-b2p">
+                                                        <rect key="frame" x="191" y="0.0" width="178" height="178"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="wE6-rc-b2p" secondAttribute="height" multiplier="1:1" id="zGc-g2-0tM"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRz-Mo-jhq">
+                                                        <rect key="frame" x="249" y="208" width="62" height="30"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <state key="normal" title="PROFILE"/>
+                                                        <connections>
+                                                            <segue destination="vC3-pB-5Vb" kind="showDetail" id="p84-OQ-UvN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-uu-qqe">
+                                                        <rect key="frame" x="227" y="268" width="106" height="30"/>
+                                                        <state key="normal" title="COLLABORATE"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOe-cX-7se">
+                                                        <rect key="frame" x="255" y="328" width="50" height="30"/>
+                                                        <state key="normal" title="GOALS"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOG-D4-xW2">
+                                                        <rect key="frame" x="261" y="388" width="39" height="30"/>
+                                                        <state key="normal" title="JOBS"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWZ-Y7-ihv">
+                                                        <rect key="frame" x="241" y="448" width="79" height="30"/>
+                                                        <state key="normal" title="MESSAGES"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iA-lR-eG7">
+                                                        <rect key="frame" x="244" y="508" width="72" height="30"/>
+                                                        <state key="normal" title="SETTINGS"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8i-hL-5V4">
+                                                        <rect key="frame" x="249" y="568" width="62" height="30"/>
+                                                        <state key="normal" title="LOGOUT"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="wE6-rc-b2p" secondAttribute="height" multiplier="1:1" id="zGc-g2-0tM"/>
+                                            <constraint firstAttribute="trailing" secondItem="kip-YY-DNa" secondAttribute="trailing" id="6kI-Uu-Nxt"/>
+                                            <constraint firstItem="kip-YY-DNa" firstAttribute="leading" secondItem="bpu-aS-4dU" secondAttribute="leading" id="81w-Cn-KTh"/>
+                                            <constraint firstItem="kip-YY-DNa" firstAttribute="top" secondItem="bpu-aS-4dU" secondAttribute="top" id="Qd9-zE-YqI"/>
+                                            <constraint firstAttribute="bottom" secondItem="kip-YY-DNa" secondAttribute="bottom" id="cdM-Zq-1ix"/>
                                         </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-uu-qqe">
-                                        <rect key="frame" x="50" y="299" width="500" height="30"/>
-                                        <state key="normal" title="COLLABORATE"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOe-cX-7se">
-                                        <rect key="frame" x="50" y="349" width="500" height="30"/>
-                                        <state key="normal" title="GOALS"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOG-D4-xW2">
-                                        <rect key="frame" x="50" y="399" width="500" height="30"/>
-                                        <state key="normal" title="JOBS"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWZ-Y7-ihv">
-                                        <rect key="frame" x="50" y="449" width="500" height="30"/>
-                                        <state key="normal" title="MESSAGES"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iA-lR-eG7">
-                                        <rect key="frame" x="50" y="499" width="500" height="30"/>
-                                        <state key="normal" title="SETTINGS"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8i-hL-5V4">
-                                        <rect key="frame" x="50" y="549" width="500" height="30"/>
-                                        <state key="normal" title="LOGOUT"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRz-Mo-jhq">
-                                        <rect key="frame" x="50" y="249" width="500" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                        <state key="normal" title="PROFILE"/>
-                                        <connections>
-                                            <segue destination="vC3-pB-5Vb" kind="showDetail" id="p84-OQ-UvN"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="wE6-rc-b2p" firstAttribute="centerX" secondItem="7i8-LO-sZn" secondAttribute="centerX" id="108-TH-xQA"/>
-                                    <constraint firstAttribute="trailing" secondItem="SRz-Mo-jhq" secondAttribute="trailing" constant="50" id="23H-BA-Owo"/>
-                                    <constraint firstItem="DOG-D4-xW2" firstAttribute="width" secondItem="SRz-Mo-jhq" secondAttribute="width" id="4Qi-sk-BTr"/>
-                                    <constraint firstItem="FWZ-Y7-ihv" firstAttribute="top" secondItem="DOG-D4-xW2" secondAttribute="bottom" constant="20" id="4SF-yR-LGm"/>
-                                    <constraint firstItem="6iA-lR-eG7" firstAttribute="width" secondItem="SRz-Mo-jhq" secondAttribute="width" id="4VW-WF-djA"/>
-                                    <constraint firstItem="VOe-cX-7se" firstAttribute="top" secondItem="kb2-uu-qqe" secondAttribute="bottom" constant="20" id="7XO-xc-Dxe"/>
-                                    <constraint firstItem="FWZ-Y7-ihv" firstAttribute="width" secondItem="SRz-Mo-jhq" secondAttribute="width" id="8kb-Z2-nLF"/>
-                                    <constraint firstItem="kb2-uu-qqe" firstAttribute="top" secondItem="SRz-Mo-jhq" secondAttribute="bottom" constant="20" id="CCC-vS-6D9"/>
-                                    <constraint firstItem="6iA-lR-eG7" firstAttribute="centerX" secondItem="wE6-rc-b2p" secondAttribute="centerX" id="Db7-HD-yYf"/>
-                                    <constraint firstItem="VOe-cX-7se" firstAttribute="centerX" secondItem="wE6-rc-b2p" secondAttribute="centerX" id="Krc-1t-RtU"/>
-                                    <constraint firstItem="DOG-D4-xW2" firstAttribute="centerX" secondItem="wE6-rc-b2p" secondAttribute="centerX" id="OJf-yw-VeR"/>
-                                    <constraint firstItem="SRz-Mo-jhq" firstAttribute="top" secondItem="wE6-rc-b2p" secondAttribute="bottom" constant="34" id="QbX-Cr-2oT"/>
-                                    <constraint firstAttribute="bottom" secondItem="h8i-hL-5V4" secondAttribute="bottom" constant="28" id="b7R-Ws-zt6"/>
-                                    <constraint firstItem="VOe-cX-7se" firstAttribute="width" secondItem="SRz-Mo-jhq" secondAttribute="width" id="dMU-lo-oaT"/>
-                                    <constraint firstItem="h8i-hL-5V4" firstAttribute="top" secondItem="6iA-lR-eG7" secondAttribute="bottom" constant="20" id="dxf-U0-p8w"/>
-                                    <constraint firstItem="kb2-uu-qqe" firstAttribute="width" secondItem="SRz-Mo-jhq" secondAttribute="width" id="h48-hz-KWh"/>
-                                    <constraint firstItem="h8i-hL-5V4" firstAttribute="width" secondItem="SRz-Mo-jhq" secondAttribute="width" id="hz2-Yx-O4f"/>
-                                    <constraint firstItem="SRz-Mo-jhq" firstAttribute="leading" secondItem="7i8-LO-sZn" secondAttribute="leading" constant="50" id="kao-wm-Abw"/>
-                                    <constraint firstItem="h8i-hL-5V4" firstAttribute="centerX" secondItem="wE6-rc-b2p" secondAttribute="centerX" id="liS-4S-Z7p"/>
-                                    <constraint firstItem="wE6-rc-b2p" firstAttribute="top" secondItem="7i8-LO-sZn" secondAttribute="top" constant="37" id="m8i-gG-2MP"/>
-                                    <constraint firstItem="SRz-Mo-jhq" firstAttribute="centerX" secondItem="wE6-rc-b2p" secondAttribute="centerX" id="np6-Zk-WlJ"/>
-                                    <constraint firstItem="DOG-D4-xW2" firstAttribute="top" secondItem="VOe-cX-7se" secondAttribute="bottom" constant="20" id="oBp-Ck-D9n"/>
-                                    <constraint firstItem="kb2-uu-qqe" firstAttribute="centerX" secondItem="wE6-rc-b2p" secondAttribute="centerX" id="oLq-dX-cn8"/>
-                                    <constraint firstItem="FWZ-Y7-ihv" firstAttribute="centerX" secondItem="wE6-rc-b2p" secondAttribute="centerX" id="rxn-82-t2O"/>
-                                    <constraint firstItem="6iA-lR-eG7" firstAttribute="top" secondItem="FWZ-Y7-ihv" secondAttribute="bottom" constant="20" id="vmc-vI-idp"/>
+                                    <constraint firstItem="bpu-aS-4dU" firstAttribute="width" secondItem="7i8-LO-sZn" secondAttribute="width" id="FIK-VW-Vio"/>
+                                    <constraint firstAttribute="trailing" secondItem="bpu-aS-4dU" secondAttribute="trailing" id="OJ5-d7-3R6"/>
+                                    <constraint firstItem="bpu-aS-4dU" firstAttribute="leading" secondItem="7i8-LO-sZn" secondAttribute="leading" id="iMt-7i-kg6"/>
+                                    <constraint firstAttribute="bottom" secondItem="bpu-aS-4dU" secondAttribute="bottom" id="vtW-yv-On4"/>
+                                    <constraint firstItem="bpu-aS-4dU" firstAttribute="top" secondItem="7i8-LO-sZn" secondAttribute="top" id="wYv-fQ-V7w"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -129,9 +126,19 @@
                         <constraints>
                             <constraint firstItem="q0U-SB-joM" firstAttribute="top" secondItem="7i8-LO-sZn" secondAttribute="bottom" id="0wA-tJ-plH"/>
                             <constraint firstAttribute="trailing" secondItem="7i8-LO-sZn" secondAttribute="trailing" id="0x7-qR-55v"/>
+                            <constraint firstItem="7i8-LO-sZn" firstAttribute="leading" secondItem="o2l-mB-6mX" secondAttribute="leadingMargin" id="3u5-H7-8P7"/>
                             <constraint firstItem="7i8-LO-sZn" firstAttribute="leading" secondItem="o2l-mB-6mX" secondAttribute="leading" id="QZG-K6-fgO"/>
                             <constraint firstItem="7i8-LO-sZn" firstAttribute="top" secondItem="o2l-mB-6mX" secondAttribute="top" id="jBZ-fp-VtI"/>
+                            <constraint firstItem="q0U-SB-joM" firstAttribute="top" secondItem="7i8-LO-sZn" secondAttribute="bottom" id="m8b-bb-gfS"/>
+                            <constraint firstItem="7i8-LO-sZn" firstAttribute="top" secondItem="o2l-mB-6mX" secondAttribute="topMargin" id="ton-HY-0fT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7i8-LO-sZn" secondAttribute="trailing" id="yGf-i9-DRL"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0x7-qR-55v"/>
+                                <exclude reference="QZG-K6-fgO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="efe-ex-2rB"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -155,22 +162,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8" customClass="ProfileView">
-                                <rect key="frame" x="78" y="140" width="85.15" height="61.5"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8" customClass="ProfileView">
+                                <rect key="frame" x="78" y="140" width="85" height="62"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="ProfileImage" value="Will"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="NetworkImage" value="Medium"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" id="18" customClass="ProfileView" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="78" y="224" width="56.75" height="65.5"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="18" customClass="ProfileView">
+                                <rect key="frame" x="78" y="224" width="57" height="66"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="ProfileImage" value="Jennifer"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="NetworkImage" value="Facebook"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" id="33" customClass="ProfileView" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="102" y="320" width="76.75" height="65.5"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33" customClass="ProfileView">
+                                <rect key="frame" x="102" y="320" width="77" height="66"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="ProfileImage" value="Crystal"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="NetworkImage" value="LinkedIn"/>
@@ -179,12 +186,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="18" firstAttribute="top" secondItem="8" secondAttribute="bottom" constant="33" id="19"/>
+                            <constraint firstItem="18" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="78" id="20"/>
+                            <constraint firstItem="33" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="102" id="34"/>
+                            <constraint firstItem="33" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="41" id="35"/>
                             <constraint firstItem="8" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="58" id="bez-CO-59b"/>
                             <constraint firstItem="8" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="76" id="u4t-k3-Dij"/>
-                            <constraint id="19" firstItem="18" firstAttribute="top" secondItem="8" secondAttribute="bottom" constant="33"/>
-                            <constraint id="20" firstItem="18" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="78"/>
-                            <constraint id="34" firstItem="33" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="102"/>
-                            <constraint id="35" firstItem="33" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="41"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -226,27 +233,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Crystal" width="55" height="55"/>
+        <image name="Facebook" width="21" height="42"/>
+        <image name="Jennifer" width="55" height="55"/>
+        <image name="LinkedIn" width="41" height="42"/>
         <image name="Medium" width="52" height="42"/>
         <image name="PartnerInCrime" width="178" height="178"/>
         <image name="Will" width="51" height="51"/>
-        <image name="Ace" width="55" height="55"/>
-        <image name="Bill" width="55" height="55"/>
-        <image name="CompactFacebook" width="11" height="21"/>
-        <image name="CompactGitHub" width="22" height="21"/>
-        <image name="CompactLinkedIn" width="21" height="21"/>
-        <image name="CompactMedium" width="26" height="21"/>
-        <image name="CompactStackOverflow" width="17" height="21"/>
-        <image name="CompactTwitter" width="26" height="21"/>
-        <image name="Crystal" width="55" height="55"/>
-        <image name="Facebook" width="21" height="42"/>
-        <image name="GitHub" width="44" height="42"/>
-        <image name="Jennifer" width="55" height="55"/>
-        <image name="John" width="55" height="55"/>
-        <image name="LinkedIn" width="41" height="42"/>
-        <image name="Logo" width="620" height="109"/>
-        <image name="StackOverflow" width="33" height="42"/>
-        <image name="Twitter" width="52" height="42"/>
-        <image name="Wayne" width="55" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="G7Y-hh-Vh0"/>
